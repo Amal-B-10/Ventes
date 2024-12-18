@@ -1,0 +1,201 @@
+---
+title: "ventes exam"
+author: "Amal"
+date: "2024-12-18"
+output: html_document
+---
+
+```{r}
+#Lire<-function(){
+ # u<-seq(as.Date("01/01/2020", tryFormats=c("%d-%m-%Y")), as.Date("01/12/2020", tryFormats=c("%d-%m-%Y")), by = "month")
+  #u1<-seq(format(as.Date("2020-01-01"),"%d-%m-%y"),format(as.Date("2020-12-01"),"%d-%m-%y"), by = "month")
+  #u2<-seq(as.Date("01/01/2022", tryFormats=c("%d-%m-%Y")), as.Date("01/12/2022", tryFormats=c("%d-%m-%Y")), by = "month")
+  #u3<-seq(as.Date("1/1/2023", tryFormats=c("%d-%m-%Y")), as.Date("1/12/2023", tryFormats=c("%d-%m-%Y")), by = "month")
+  #u4<-seq(as.Date("1/1/2024", tryFormats=c("%d-%m-%Y")), as.Date("1/12/2024", tryFormats=c("%d-%m-%Y")), by = "month")
+  #for (i in u){
+ #   fichier<-read.csv(paste0("~/Téléchargements/exam_data/exam_data/ventes",u[i],".csv"))
+ # }
+ # for(i in u1){
+     # fichier<-read.csv(paste0("~/Téléchargements/exam_data/exam_data/ventes",u1[i],".csv"))
+ # }
+ #for (i in u2){
+#      fichier<-read.csv(paste0("~/Téléchargements/exam_data/exam_data/ventes",u2[i],".csv"))
+#  }
+#   for (i in u3){
+#       fichier<-read.csv(paste0("~/Téléchargements/exam_data/exam_data/ventes",u3[i],".csv"))
+#   }
+#    for (i in u4){
+#        fichier<-read.csv(paste0("~/Téléchargements/exam_data/exam_data/ventes",u4[i],".csv"))
+#    }
+#   return(fichier) 
+# }
+# ?as
+# 
+# Lecture<-function(dossier){
+#   liste<-list()
+#   for (i in 2020:2024){
+#     for (j in 1:12){
+#       mois<-sprintf("%02d",j)
+#       nom<-paste0("~/Téléchargements/exam_data/",dossier, "/ventes",mois,"/01",i,".csv")
+#       donnee<-read.csv(nom)
+#       liste[[nom]]<-donnee
+#       return(liste)
+    #}
+  #}
+#}
+
+#Lecture("exam_data")"
+
+```
+
+```{r}
+# ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  
+# ventes01.01.2021 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2021.csv")
+#  View(ventes01.01.2020)
+#  
+# ventes01.01.2022 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2022.csv")
+#  View(ventes01.01.2022)
+#  
+# ventes01.01.2023 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2023.csv")
+#  View(ventes01.01.2023)
+#  
+# ventes01.01.2024 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2024.csv")
+#  View(ventes01.01.2024)
+#  
+# ventes01.02.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-02-2020.csv")
+#  View(ventes01.02.2020)
+#  
+# ventes01.02.2021 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-02-2021.csv")
+#  View(ventes01.02.2021)
+#  
+# ventes01.02.2022 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-02-2022.csv")
+#  View(ventes01.01.2020)
+#  
+# ventes01.02.2023 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-02-2023.csv")
+#  View(ventes01.02.2023)
+#  
+# ventes01.02.2024 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-02-2024.csv")
+#  View(ventes01.02.2024)
+#  
+# ventes01.03.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-03-2020.csv")
+#  View(ventes01.03.2020)
+#  
+# ventes01.03.2021 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-03-2021.csv")
+#  View(ventes01.03.2021)
+#  
+# ventes01.03.2022 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-03-2022.csv")
+#  View(ventes01.03.2022)
+#  
+# ventes01.03.2023 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-03-2023.csv")
+#  View(ventes01.03.2023)
+#  
+# ventes01.03.2024 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-03-2024.csv")
+#  View(ventes01.01.2020)
+#  
+# ventes01.04.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-04-2020.csv")
+#  View(ventes01.04.2020)
+#  
+# ventes01.04.2021 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-04-2021.csv")
+#  View(ventes01.04.2021)
+#  
+# ventes01.04.2022 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-04-2022.csv")
+#  View(ventes01.04.2022)
+#  
+# ventes01.04.2023 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-04-2023.csv")
+#  View(ventes01.04.2023)
+#  
+# ventes01.04.2024 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-04-2024.csv")
+#  View(ventes01.04.2024)
+#  
+# ventes01.05.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-05-2020.csv")
+#  View(ventes01.05.2020)
+#  
+# ventes01.05.2021 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2021.csv")
+#  View(ventes01.05.2021)
+#  
+# ventes01.05.2022 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-05-2022.csv")
+#  View(ventes01.05.2022)
+#  
+# ventes01.05.2023 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-05-2023.csv")
+#  View(ventes01.05.2023)
+#  
+# ventes01.05.2024 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-05-2024.csv")
+#  View(ventes01.05.2024)
+#  
+# ventes01.06.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-05-2024.csv")
+#  View(ventes01.01.2020)
+#  
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  ventes01.01.2020 <- read.csv("~/Téléchargements/exam_data/exam_data/ventes01-01-2020.csv")
+#  View(ventes01.01.2020)
+#  
+#  date<-"01-01-2020"
+#  v<-"ventes"+date
+#  v
+```
+
